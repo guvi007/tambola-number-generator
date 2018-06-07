@@ -3,7 +3,7 @@ body {
 	margin: 0px;
 	height:100%;
 	background-color: #f4f8ff;
-  background-image: -webkit-linear-gradient(160deg, #c9ddff 35%, #f4f8ff 35%);
+	background-image: -webkit-linear-gradient(160deg, #c9ddff 35%, #f4f8ff 35%);
 }
 
 td {
@@ -49,20 +49,20 @@ td {
 
 .circle {
 	border-style: solid;
-    border-color: coral;
-		border-radius: 50%;
-		width: 250px;
-		height: 250px;
-		border-width: thick;
+	border-color: coral;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	border-width: thick;
 }
 
 .first_hr {
-    display: block;
-    margin-top: -0.7em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
+	display: block;
+	margin-top: -0.7em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
 }
 
 #random {
@@ -95,8 +95,8 @@ footer {
 }
 
 #secondpage {
-   min-height:100%;
-   position:relative;
+	min-height:100%;
+	position:relative;
 }
 
 #x1,#x3,#x5,#x7,#x9,#x12,#x14,#x16,#x18,#x20,#x21,#x23,#x25,#x27,

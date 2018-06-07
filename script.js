@@ -48,6 +48,6 @@ play_again.addEventListener('click',function() {
 	for(var i=0;i<9;++i) {
 		for(var j=0;j<10;j++) {
 			table.rows[i].cells[j].innerText = "";
-			}
+		}
 	}
 })
