@@ -21,6 +21,7 @@ random_number.addEventListener('click',function() {
 	len-=1;
 	var n = array[ran_value].toString();
 	var msg = new SpeechSynthesisUtterance(n);
+	msg.pitch = 2;
 	window.speechSynthesis.speak(msg);
 	var row = parseInt(array[ran_value] / 10);
 	var column = parseInt(array[ran_value] % 10);

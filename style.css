@@ -9,16 +9,21 @@ body {
 td {
 	padding: 0.2em;
 	width: 30px;
-	height: 40px;
 	text-align: center;
 	font-weight: bold;
-	font-size: 30px;
-	/* font-family: sans-serif; */
 }
 
 .heading {
 	font-family:monospace;
+	font-size: 30px;
 }
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
 
 #table {
 	margin-left: 3%;
@@ -26,7 +31,6 @@ td {
 }
 
 #number {
-	/* background-color: red; */
 	width: 38%;
 	float: left;
 	text-align: center;
@@ -38,13 +42,13 @@ td {
 	/* background-color: yellow; */
 	float: left;
 	width: 60%;
-	margin-top: 3.2em;
+	margin-top: 25px;
 }
 
 #number_para {
 	font-size: 650%;
 	padding-left: 0px;
-	margin-top: 33%;
+	margin-top: 30%;
 }
 
 .circle {
@@ -79,7 +83,7 @@ td {
 
 header{
 	background-color: coral;
-	padding: 0.3px;
+	padding: 1.4%;
 }
 
 footer {
@@ -91,7 +95,7 @@ footer {
 }
 
 .content {
-	margin-top: 4.5em;
+	margin-top: 5%;
 }
 
 #secondpage {
@@ -105,6 +109,13 @@ footer {
 #x81,#x83,#x85,#x87,#x89{
 	background-color: #fcbd99;
 }
+
+.border {
+	height: 33px;
+	padding-top: 14px;
+	font-size: 170%;
+}
+
 
 #gameover {
 	margin-top: 10%;
