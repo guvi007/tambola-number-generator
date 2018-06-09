@@ -20,6 +20,8 @@ random_number.addEventListener('click',function() {
 	var ran_value = Math.floor(Math.random() * len);
 	len-=1;
 	var n = array[ran_value].toString();
+	var msg = new SpeechSynthesisUtterance(n);
+	window.speechSynthesis.speak(msg);
 	var row = parseInt(array[ran_value] / 10);
 	var column = parseInt(array[ran_value] % 10);
 	if(column == 0) {
