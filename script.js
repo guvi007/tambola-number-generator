@@ -4,6 +4,8 @@ let table = document.getElementById("table");
 let game = document.getElementById("end");
 let play_again = document.getElementById("button2");
 
+var w = window.speechSynthesis;
+
 var array = new Array()
 len = 90;
 for(var i=1;i<=90;++i) {
@@ -17,22 +19,23 @@ for(var i=0;i<9;++i) {
 }
 var row_prev = -1;
 var column_prev = -1;
+var row,column;
 random_number.addEventListener('click',function() {
 	var ran_value = Math.floor(Math.random() * len);
 	len-=1;
 	var n = array[ran_value].toString();
 	var msg = new SpeechSynthesisUtterance(n);
 	msg.pitch = 2;
-	window.speechSynthesis.speak(msg);
-	var row = parseInt(array[ran_value] / 10);
-	var column = parseInt(array[ran_value] % 10);
+	w.speak(msg);
+	row = parseInt(array[ran_value] / 10);
+	column = parseInt(array[ran_value] % 10);
 	if(column == 0) {
 		column = 10;
 		row -= 1;
 	}
 	table.rows[row].cells[column-1].innerText = n;
 	table.rows[row].cells[column-1].style.backgroundColor = "#fff2ac";
-	table.rows[row].cells[column-1].style.backgroundImage = "linear-gradient(to right, #ffe359 0%, #fff2ac 100%)";
+	table.rows[row].cells[column-1].style.backgroundImage = "linear-gradient(45deg, #FFFF00 0%, #fff2ac 100%)";
 	if(row_prev !== -1 && column_prev !== -1) {
 		table.rows[row_prev].cells[column_prev-1].style.background = null;
 	}
@@ -48,7 +51,7 @@ random_number.addEventListener('click',function() {
 
 play_again.addEventListener('click',function() {
 	if(confirm("Are you sure you want to reset the game?")) {
-		speechSynthesisInstance.cancel();
+		w.cancel();
 		random_number.style.display = 'block';
 		game.style.display = 'none';
 		para.innerText = ":D";
@@ -63,6 +66,7 @@ play_again.addEventListener('click',function() {
 				table.rows[i].cells[j].innerText = "";
 			}
 		}
+		table.rows[row].cells[column-1].style.background = null;
 		var row_prev = -1;
 		var column_prev = -1;
 	}
