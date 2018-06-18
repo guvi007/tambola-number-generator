@@ -1,0 +1,168 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 30px;
+	height:100%;
+	width: 100%;
+	background-color: #f4f8ff;
+	background-image: -webkit-linear-gradient(160deg, #c9ddff 35%, #f4f8ff 35%);
+}
+header, footer{
+    background-color: coral;
+    padding: 10px;
+	font-size: 40px;
+    text-align: center;
+}
+footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	padding: 5px;
+	font-size: 15px;
+	text-align: right;
+}
+hr {
+	display: block;
+	margin-top: -0.7em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+.border {
+	background-color: #fcbd99;
+}
+#table, td {
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+#table {
+	margin-top: 25px;
+	width: 98%;
+	margin-left: 3px;
+}
+
+.no_border {
+	border-width: 0px;
+	text-align: center;
+}
+
+#cache {
+	margin: 0px;
+}
+
+.temp2 {
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+#number {
+	text-align: center;
+}
+
+#number_para {
+	font-size: 650%;
+	padding-top: 60px;
+	padding-left: 0px;
+	height: 250px;
+}
+.circle {
+	border-style: solid;
+	border-color: coral;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	border-width: thick;
+}
+#random,#button2 {
+	margin-top: 8%;
+	font-size: 170%;
+	font-family: "Comic Sans MS";
+	display: block;
+	padding: 8px 20px;
+	background: linear-gradient(#67ae55, #578843);
+	background-color: #69a74e;
+	box-shadow: inset 0 1px 1px #a4e388;
+	border-color: #3b6e22 #3b6e22 #2c5115;
+	border-width: thin;
+	border-radius: 5px;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+#button2 {
+	font-size: 140%;
+	padding: 4px 15px;
+}
+.content {
+	margin-top: 5%;
+	padding-bottom: 30px;
+}
+#gameover {
+	padding-top: 10%;
+	font-size: 200%;
+	padding-bottom:-10%;
+}
+@media (max-width:4500px) {
+	td {
+		padding: 0px;
+		padding-top: 3px;
+		width: 30px;
+		text-align: center;
+		font-weight: bold;
+		height: 30px;
+		font-size: 90%;
+	}
+	#button2 {
+		font-size: 140%;
+		margin-top: 3	0px;
+	}
+}
+@media (min-width:400px) and (max-width:650px) {
+	td {
+		padding-top: 4px;
+		width: 30px;
+		text-align: center;
+		font-weight: bold;
+		height: 40px;
+		font-size: 120%;
+	}
+	#button2 {
+		font-size: 140%;
+		margin-top: 40px;
+	}
+}
+@media (min-width:650px) and (max-width:1200px) {
+	td {
+		padding-top: 4px;
+		width: 30px;
+		text-align: center;
+		font-weight: bold;
+		height: 60px;
+		font-size: 170%;
+	}
+	#button2 {
+		font-size: 140%;
+		margin-top: 50px;
+	}
+	#random {
+		margin-top: 4%;
+	}
+}
+@media (min-width:1200px) {
+	td {
+		padding-top: 4px;
+		width: 30px;
+		text-align: center;
+		font-weight: bold;
+		height: 55px;
+		font-size: 170%;
+	}
+	#button2 {
+		margin-top: 22%;
+		font-size: 140%;
+	}
+	#random {
+		margin-top: 11%;
+	}
+}
